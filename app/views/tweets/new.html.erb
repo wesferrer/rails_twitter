@@ -1,0 +1,18 @@
+<h1>Make a new tweet!</h1>
+
+<%= form_for @tweet do |f|%>
+
+  <div>
+    <%= f.label :handle%>
+    <%= f.text_field :handle%>
+  </div>
+
+  <div>
+    <%= f.label :content%>
+    <%= f.text_field :content%>
+  </div>
+
+  <%= f.submit "Add a new Tweet!" %>
+
+<% end %>
+<%= link_to "Home", tweets_path%>
